@@ -1,0 +1,9 @@
+-I./src
+-I./includes
+-I./lib/libft/includes
+-I./lib/listlib/includes
+-I./lib/termlib/includes
+-I./lib/eventlib/includes
+-I./lib/libft/ft_printf/includes
+-I./lib/hashtablib/includes
+-I./lib/unittestlib/includes

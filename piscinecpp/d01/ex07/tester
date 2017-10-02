@@ -1,0 +1,2 @@
+make re
+./replace Makefile OBJDIR EMIL
