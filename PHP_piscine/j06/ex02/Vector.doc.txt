@@ -1,0 +1,12 @@
+
+<- Vector ----------------------------------------------------------------------
+Contains:
+    magnitude
+    normalize
+    add
+    sub
+    scalarProduct
+    dotProduct
+    crossProduct
+    cos between 2 vectors
+---------------------------------------------------------------------- Vector ->

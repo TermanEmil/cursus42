@@ -1,0 +1,137 @@
+body {
+	background-color: #505050;
+}
+
+.rounded_corners {
+	border-radius: 10px;
+	display: inline-block;
+}
+
+.panel {
+	background-color: #909090;
+	display: inline-block;
+	position: relative;
+	box-shadow: 10px 10px 15px black
+}
+
+.small_btn {
+	height: 20px;
+	width: 20px;
+}
+
+.big_btn {
+	height: 50px;
+	width: 	50px;
+	display: block;
+	margin: 10 auto;
+}
+
+.relative_pos {
+	position: relative;
+}
+
+div.button_grid {
+	margin: 20 20;
+	width: 100px;
+	height: 320px;
+}
+
+#main_panel {
+	display: table;
+	margin: 30 auto;
+	position: relative;
+}
+
+#middle_panel {
+	width: 1000px;
+	height: 100px;
+}
+
+#DayOf42 {
+	float: left;
+	height: calc(238px / 3);
+	width:  calc(922px / 3);
+	margin: 10 auto;
+}
+
+#reload_btn {
+	right: 10px;
+	top: 10px;
+	position: absolute;
+}
+
+#close_btn {
+	right: 10px;
+	bottom: 10px;
+	position: absolute;
+}
+
+#loupe {
+	position: absolute;
+	right: 30px;
+	bottom: -15px;
+	width: 180px;
+}
+
+#right_panel {
+	float: right;
+}
+
+#book {
+	height: 70px;
+	width: 	50px;
+}
+
+#towel {
+	height: 40px;
+	width: 	60px;	
+}
+
+#brick_wall {
+	margin: 0 8;
+}
+
+#brick {
+	width: 28px;
+	height: 23px;
+	margin: -1 -1;
+}
+
+#brick_table {
+	border-collapse: collapse;
+}
+
+td, tr {
+	margin: 0 0;
+	border: 0;
+	padding: 0;
+}
+
+#center_img {
+	position: absolute;
+	margin: 20 auto;
+
+}
+
+#cluster {
+	width: 700px;
+	margin: 10 10;
+}
+
+#input_panel {
+	background-color: #88FF89;
+}
+
+#bunch_of_text {
+	margin: 5 7
+}
+
+#input_field {
+	margin: 5 5;
+	width: 340px;
+}
+
+.brightness img:hover {
+	border: 4px solid red;
+	border-radius: 5px;
+}

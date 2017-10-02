@@ -1,0 +1,54 @@
+#el_num {
+	position: absolute;
+	bottom: 1px;
+	left: 1px;
+	font-size: 10px;
+}
+#el_name {
+	text-align: center;
+	font-weight: bold;
+	font-size: 35px
+}
+#el_mass {
+	position: absolute;
+	top: 0px;
+	right: 1px;
+	font-size: 10px;
+}
+#empty {
+	background-color : transparent;
+	border: 0px
+}
+#ln_name {
+	text-align: center;
+	font-weight: bold;
+	font-size: 25;
+}
+#ln_range {
+	text-align: center;
+	font-size: 10;
+}
+td {
+	background-color: pink;
+	/*width: 50px;*/
+	/*height: 50px;*/
+	/*max-width: 50px;*/
+	/*max-height: 50px;*/
+	overflow: hidden;
+	white-space: nowrap;
+	position: relative;
+	border: 2px solid black;
+}
+
+tr {padding-top: 1;}
+
+table {
+	border-spacing: 0px;
+	border-collapse: separate;
+}
+
+body {
+		background-image: url(https://thesuccubusstudy.files.wordpress.com/2014/12/30517-breaking-bad-breaking-doge.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}

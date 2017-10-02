@@ -1,0 +1,10 @@
+ex02
+	see that on ctl-d the ^D appears.
+
+ex03
+	Array
+	(
+	    [3] => 0
+	    [4] => 0
+	    [5] => 1
+	)

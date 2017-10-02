@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Baloon</title>
+
+        <style>
+            #my_baloon {
+                background-color: red;
+                width: 200px;
+                height: 200px;
+                border-radius: 100000px;
+                margin: auto;
+            }
+        </style>
+
+        <script>
+            var colors = ['red', 'green', 'blue'];
+
+            function    baloon_grow()
+            {
+                var baloon_style = document.getElementById('my_baloon').style;
+
+                colors.push(colors.shift());
+                baloon_style.backgroundColor = colors[0];
+
+                if (baloon_style.width == "") {
+                    baloon_style.width = "210px";
+                    baloon_style.height = baloon_style.width;
+                }
+                else
+                {
+                    baloon_style.width = parseInt(baloon_style.width, 10) + 10 + "px";
+                    baloon_style.height = baloon_style.width;
+                }
+
+                if (parseInt(baloon_style.width, 10) >= 420)
+                {
+                    baloon_style.width = "200px";
+                    baloon_style.height = baloon_style.width;
+                }
+            }
+
+            function    baloon_shrink()
+            {
+                var baloon_style = document.getElementById('my_baloon').style;
+
+                if (parseInt(baloon_style.width, 10) >= 210) {;
+                    colors.unshift(colors.pop());
+                    baloon_style.backgroundColor = colors[0];
+
+                    baloon_style.width = parseInt(baloon_style.width, 10) - 5 + "px";
+                    baloon_style.height = baloon_style.width;
+                }
+            }
+
+        </script>
+
+    </head>
+    <body>
+    <div id="my_baloon" onclick="baloon_grow()" onmouseout="baloon_shrink()">
+
+    </div>
+    </body>
+</html>

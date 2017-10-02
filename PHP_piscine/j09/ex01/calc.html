@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calc</title>
+
+    <script>
+        function    ft_eval()
+        {
+            $_GET = {};
+
+            var query = document.location.toString().replace(/^.*?\?/, '').replace(/#.*$/, '').split('&');
+
+            for(var i=0, l=query.length; i<l; i++) {
+                var aux = decodeURIComponent(query[i]).split('=');
+                $_GET[aux[0]] = aux[1];
+            }
+
+            if ($_GET['left_input'] == '' || $_GET['right_input'] == '')
+            {
+                alert("Error: (empty fields)");
+                return ;
+            }
+
+            var result = 0;
+            var left =  parseInt($_GET['left_input']);
+            var right = parseInt($_GET['right_input']);
+
+
+
+            switch ($_GET['opperator'])
+            {
+                case 'add':
+                    result = left + right;
+                    break ;
+
+                case 'sub':
+                    result = left - right;
+                    break ;
+
+                case 'mult':
+                    result = left * right;
+                    break ;
+
+                case 'div':
+                    if (right == 0)
+                    {
+                        alert('Error: (division by zero)');
+                        return;
+                    }
+                    result = left / right;
+                    break ;
+
+                case 'mod':
+                    if (right == 0)
+                    {
+                        alert('Error: (division by zero)');
+                        return;
+                    }
+                    result = left % right;
+                    break ;
+            }
+            alert(result);
+            console.log(result);
+        }
+
+    </script>
+
+</head>
+<body>
+<div align="center">
+    <form id="my_calc" min="0" onsubmit="ft_eval()">
+        <h1>Calculator</h1>
+        <label>
+            <input type="number" name="left_input">
+            <select name="opperator">
+                <option value="add">+</option>
+                <option value="sub">-</option>
+                <option value="mult">*</option>
+                <option value="div">/</option>
+                <option value="mod">%</option>
+            </select>
+            <input type="number" min="0" name="right_input">
+            <input type="submit" name="submit" value="Try me!">
+        </label>
+    </form>
+</div>
+</body>
+</html>
